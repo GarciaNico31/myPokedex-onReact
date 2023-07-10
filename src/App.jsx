@@ -3,12 +3,12 @@ import "./App.css";
 
 const pokemonList = [
   {
-    name: "bulbasaur",
+    Name: "bulbasaur",
     imgSrc:
       "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png",
   },
   {
-    name: "mew",
+    Name: "mew",
   },
 ];
 
@@ -17,7 +17,7 @@ function App() {
 
   return (
     <div>
-      <PokemonCard name={pokemon.name} imgSrc={pokemon.imgSrc} />
+      <PokemonCard imgSrc={pokemon.imgSrc} Name={pokemon.Name}/>
     </div>
   );
 }
